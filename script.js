@@ -11,39 +11,49 @@
 
 const arrayOfTexts = [
     `
-    |￣￣￣￣￣￣￣ |  
-    |  Ice Cream   |
-    |＿＿＿＿＿ _＿_|
-    (\__/) || 
-    (•ㅅ•) || 
-    / 　 づ
+|￣￣￣￣￣￣￣ |  
+|  Ice Cream   |
+|＿＿＿＿＿ _＿_|
+(\__/) || 
+(•ㅅ•) || 
+/ 　 づ
     `, 
     `
-    |￣￣￣￣￣￣￣ |  
-    |    Sushi     |
-    |＿＿＿＿＿ _＿_|
-    (\__/) || 
-    (•ㅅ•) || 
-    / 　 づ
+|￣￣￣￣￣￣￣ |  
+|    Sushi     |
+|＿＿＿＿＿ _＿_|
+(\__/) || 
+(•ㅅ•) || 
+/ 　 づ
     `,
     `
-    |￣￣￣￣￣￣￣ |  
-    |    Pizza     |
-    |＿＿＿＿＿ _＿_|
-    (\__/) || 
-    (•ㅅ•) || 
-    / 　 づ
+|￣￣￣￣￣￣￣ |  
+|    Pizza     |
+|＿＿＿＿＿ _＿_|
+(\__/) || 
+(•ㅅ•) || 
+/ 　 づ
     `
 ]
 
 const changeTextButton = document.getElementById('randombutton')
-const changeText = document.getElementById('paragraph')
+
+let pTag = document.getElementById('paragraph')
+
+let keyPress = document.getElementById('manipulateparagraph')
+
 
 changeTextButton.addEventListener('click', () => {
 const newText = arrayOfTexts[Math.floor(Math.random()*arrayOfTexts.length)]
+pTag.textContent = newText
 })
 
 const manipulateText = document.getElementById('manipulateParagraph')
+
+keyPress.addEventListener('keydown', () => {
+
+})
+
 
 
 
