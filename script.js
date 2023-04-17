@@ -45,3 +45,39 @@ const newText = arrayOfTexts[Math.floor(Math.random()*arrayOfTexts.length)]
 
 const manipulateText = document.getElementById('manipulateParagraph')
 
+
+
+
+
+
+
+
+// Assignment Prompt 2 (HARD): Build a To-Do List
+
+// In this assignment, you will be building a simple to-do list application. The to-do list should have the following features:
+
+// An input field to add new tasks.
+// A list of tasks that have been added to the to-do list.
+// A "complete" button to mark a task as complete and remove it from the list.
+// A "clear" button to remove all completed tasks from the list.
+// The to-do list should be visually appealing and easy to use. You should use HTML and CSS to layout the to-do list, and use JavaScript to implement its functionality.
+
+// You will need to use DOM manipulation to update the list of tasks and handle user input. For example, when a user enters a new task in the input field and clicks "Add", you will need to add the task to the list. When a user clicks "Complete" on a task, you will need to remove that task from the list.
+
+// You will also need to use JavaScript to keep track of which tasks have been completed and which ones haven't. You can use an array to store the list of tasks, and add a boolean property to each task to indicate whether it has been completed or not.
+
+ 
+
+// Assignment Prompt 3 (VERY HARD): Build a Calculator
+
+// tip: use String and Array methods
+
+// In this assignment, you will be building a simple calculator application. The calculator should have the following features:
+
+// A display area to show the current calculation.
+// Buttons for digits 0-9, decimal point, and arithmetic operators (+, -, *, /).
+// A "clear" button to clear the display area and reset the calculation.
+// A "calculate" button to evaluate the current calculation and display the result.
+// The calculator should be visually appealing and easy to use. You should use HTML and CSS to layout the calculator, and use JavaScript to implement its functionality.
+
+// You will need to use DOM manipulation to update the display area and handle user input. For example, when a user clicks on a digit button, you will need to append that digit to the current calculation in the display area. When a user clicks on an arithmetic operator, you will need to update the current calculation to reflect that operator.
