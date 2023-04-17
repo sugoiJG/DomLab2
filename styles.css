@@ -1,0 +1,32 @@
+body {
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: auto;
+}
+
+p {
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+#randombutton {
+    display: flex;
+    margin: auto;
+}
+
+.inputtext {
+    display: flex;
+    margin: auto;
+    width: 200px;
+}
