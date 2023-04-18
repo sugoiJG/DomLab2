@@ -40,7 +40,7 @@ const changeTextButton = document.getElementById('randombutton')
 
 let pTag = document.getElementById('paragraph')
 
-let keyPress = document.getElementById('manipulateparagraph')
+let changeWords = document.getElementById('manipulatewords')
 
 
 changeTextButton.addEventListener('click', () => {
@@ -48,12 +48,13 @@ const newText = arrayOfTexts[Math.floor(Math.random()*arrayOfTexts.length)]
 pTag.textContent = newText
 })
 
-const manipulateText = document.getElementById('manipulateParagraph')
+const manipulateText = document.getElementById('changeText')
+console.log(manipulateText)
 
-keyPress.addEventListener('keydown', () => {
-
-})
-
+manipulateText.addEventListener('keypress', logKey)
+function logKey(e) {
+    changeWords.textContent = ` ${manipulateText.value}`;
+}
 
 
 
