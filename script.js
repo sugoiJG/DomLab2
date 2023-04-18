@@ -10,15 +10,15 @@
 // You should use CSS to style the webpage, including the font and color of the text, the size and position of the image, and the background color of the webpage. You should use JavaScript to handle the button click event and input field change event, and update the paragraph text accordingly.
 
 const arrayOfTexts = [
-    `
+  `
 |￣￣￣￣￣￣￣ |  
 |  Ice Cream   |
 |＿＿＿＿＿ _＿_|
 (\__/) || 
 (•ㅅ•) || 
 / 　 づ
-    `, 
-    `
+    `,
+  `
 |￣￣￣￣￣￣￣ |  
 |    Sushi     |
 |＿＿＿＿＿ _＿_|
@@ -26,42 +26,34 @@ const arrayOfTexts = [
 (•ㅅ•) || 
 / 　 づ
     `,
-    `
+  `
 |￣￣￣￣￣￣￣ |  
 |    Pizza     |
 |＿＿＿＿＿ _＿_|
 (\__/) || 
 (•ㅅ•) || 
 / 　 づ
-    `
-]
+    `,
+];
 
-const changeTextButton = document.getElementById('randombutton')
+const changeTextButton = document.getElementById("randombutton");
 
-let pTag = document.getElementById('paragraph')
+let pTag = document.getElementById("paragraph");
 
-let changeWords = document.getElementById('manipulatewords')
+let changeWords = document.getElementById("manipulatewords");
 
+changeTextButton.addEventListener("click", () => {
+  const newText = arrayOfTexts[Math.floor(Math.random() * arrayOfTexts.length)];
+  pTag.textContent = newText;
+});
 
-changeTextButton.addEventListener('click', () => {
-const newText = arrayOfTexts[Math.floor(Math.random()*arrayOfTexts.length)]
-pTag.textContent = newText
-})
+const manipulateText = document.getElementById("changeText");
+console.log(manipulateText);
 
-const manipulateText = document.getElementById('changeText')
-console.log(manipulateText)
-
-manipulateText.addEventListener('keypress', logKey)
+manipulateText.addEventListener("keypress", logKey);
 function logKey(e) {
-    changeWords.textContent = ` ${manipulateText.value}`;
+  changeWords.textContent = ` ${manipulateText.value}`;
 }
-
-
-
-
-
-
-
 
 // Assignment Prompt 2 (HARD): Build a To-Do List
 
@@ -76,8 +68,6 @@ function logKey(e) {
 // You will need to use DOM manipulation to update the list of tasks and handle user input. For example, when a user enters a new task in the input field and clicks "Add", you will need to add the task to the list. When a user clicks "Complete" on a task, you will need to remove that task from the list.
 
 // You will also need to use JavaScript to keep track of which tasks have been completed and which ones haven't. You can use an array to store the list of tasks, and add a boolean property to each task to indicate whether it has been completed or not.
-
- 
 
 // Assignment Prompt 3 (VERY HARD): Build a Calculator
 

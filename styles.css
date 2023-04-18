@@ -1,35 +1,33 @@
 body {
-    margin: auto;
+  margin: auto;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
-
 img {
-    display: block;
-    width: 300px;
-    height: auto;
-    margin: auto;
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: auto;
 }
 
 pre {
-    display: block;
-    margin: auto;
-    width: 100px;
-    height: auto;
-    word-wrap: normal;
-
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: auto;
+  word-wrap: normal;
 }
 
 #randombutton {
-    display: flex;
-    margin: auto;
+  display: flex;
+  margin: auto;
 }
 
 .inputtext {
-    display: flex;
-    margin: auto;
-    width: 200px;
+  display: flex;
+  margin: auto;
+  width: 200px;
 }
